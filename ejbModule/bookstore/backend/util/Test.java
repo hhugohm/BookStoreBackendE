@@ -19,13 +19,13 @@ public class Test {
     
     public static void main(String args[]){
         
-       // getBookById(1);
+        getBookById(1);
         getAllBooks();
-       // getBooksByTitle("myth");
-       // getBooksByKeyword("camus");
+        getBooksByTitle("myth");
+        getBooksByKeyword("camus");
         //insert(buildBook());
         //update(11);
-        //delete(11);
+        delete(11);
        //Book book = new Book().setTitle("MI LIBRO");
         
     }

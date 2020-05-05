@@ -17,6 +17,7 @@ import javax.persistence.NamedQuery;
 import javax.persistence.Table;
 import javax.persistence.Temporal;
 import javax.persistence.TemporalType;
+import javax.persistence.Transient;
 
 
 /**
@@ -24,7 +25,7 @@ import javax.persistence.TemporalType;
  * @author hhugohm
  */
 @Entity
-@Table(name="BOOKS" , schema = "bookstoredb")
+@Table(name="BOOKS", schema = "bookstoredb")
 @NamedQueries({
     @NamedQuery(name="getAllBooks" ,query = "select b from Book b"),
     @NamedQuery(name="getBooksByTitle" ,query = "select b from Book b where lower(b.title) like lower(:pTitle)"),
@@ -35,12 +36,7 @@ import javax.persistence.TemporalType;
 })
 public class Book implements Serializable{
     
-    /**
-	 * 
-	 */
-	private static final long serialVersionUID = 1L;
-
-	@Id
+    @Id
     @Column(name="ID")
     @GeneratedValue(strategy =GenerationType.IDENTITY)
     private int id;
