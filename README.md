@@ -16,7 +16,7 @@ http://db.apache.org/derby/releases/release-10.14.2.0.cgi
 5.- Unzip file
 
 6.- Open a terminal and execute the next command - run apache derby DB 
-(please execute the command in your path/db-derby-10.14.2.0-bin/bin)
+(please execute the command in your path/db-derby-10.14.2.0-bin/bin).
 $ ./startNetworkServer  or $ startNetworkServer.bat
 Security manager installed using the Basic server security policy. 
 Apache Derby Network Server - 10.14.2.0 - (1828579) started and ready to accept connections on port 1527
